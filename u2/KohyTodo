@@ -1,0 +1,31 @@
+% =========================================================================
+% 2. ČÁST: SEZNAM ÚKOLŮ PRO GOATA (Matematická analýza a export)
+% =========================================================================
+
+% 1. VÝPOČET FYZICKÉHO MĚŘÍTKA
+% Aktuálně je poloměr R = 1. Pro finální tisk musí být R přepočítáno:
+% Měřítko 1:100 000 000 -> R = cca 6.37 cm
+% Měřítko 1:50 000 000  -> R = cca 12.7 cm
+% Parťák musí aktualizovat hodnotu R a zajistit, aby exportované jednotky 
+% odpovídaly rozměrům papíru (A4).
+
+% 2. VEKTOROVÝ EXPORT
+% Obrázky musí být exportovány ve vektorovém formátu (PDF nebo SVG), 
+% aby zůstaly čáry při tisku ostré. Použít příkaz 'print' nebo 'export_fig'.
+
+% 3. ANALÝZA ZKRESLENÍ (Matematický úkol)
+% Vybrat bod Q (např. jeden z vrcholů A, B nebo G).
+% V tomto bodě Q vypočítat:
+%   - m, n: délkové měřítko v poledníku a rovnoběžce.
+%   - P: plošné měřítko (zkreslení ploch).
+%   - omega: maximální úhlové zkreslení.
+%   - a, b: poloosy Tissotovy indikatrix.
+
+% 4. VIZUALIZACE TISSOTOVY INDIKATRIX
+% Vykreslit Tissotovu indikatrix (elipsu zkreslení) do jedné z plošek.
+% Poloosy (a, b) musí být vhodně zvětšeny pro viditelnost v mapě.
+
+% 5. VALIDACE (OVĚŘENÍ) - Bonus
+% Porovnat vypočtené hodnoty zkreslení v bodě Q s výsledky 
+% z knihovny Proj.4 (nebo online kalkulátoru) pro ověření přesnosti.
+
