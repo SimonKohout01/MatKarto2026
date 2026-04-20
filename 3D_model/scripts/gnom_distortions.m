@@ -1,0 +1,94 @@
+clc
+clear
+
+syms R u v
+
+steps = 50;
+format long g
+
+%Gnomonic projection
+x = R * tan(pi/2 - u) * cos(v);
+y = R * tan(pi/2 - u) * sin(v);
+
+%Partial derivatives
+fu = diff(x, u)
+fv = diff(x, v);
+gu = diff(y, u);
+gv = diff(y, v);
+
+%Simplify
+fu = simplify(fu, 'Steps', steps);
+fv = simplify(fv, 'Steps', steps);
+gu = simplify(gu, 'Steps', steps);
+gv = simplify(gv, 'Steps', steps);
+
+%Distortions
+mp2 = (fu^2 + gu^2)/(R^2);
+mr2 = (fv^2 + gv^2)/(R*cos(u))^2;
+p = 2*(fu*fv + gu*gv)/(R*R*cos(u));
+
+%Simplifications
+mp2 = simplify(mp2, 'Steps', steps);
+mr2 = simplify(mr2, 'Steps',steps);
+
+%Angle beween projected meridian and parallel
+num = gu*fv-fu*gv
+num = simplify(num, 'Steps',steps);
+den = fu*fv + gu*gv
+den = simplify(den, 'Steps',steps);
+fr = num/den;
+fr = simplify(fr, 'Steps', steps);
+omega = atan(fr)
+omega = simplify(omega, 'Steps',steps)
+
+%Area scale
+P = num / (R^2*cos(u))
+P = simplify(P, 'Steps',steps);
+
+%Convergence
+f = gu / fu
+f = simplify(f, "Steps",steps);
+sigma = atan(f);
+sigma = simplify(sigma,"Steps", steps);
+conv = sigma - pi/2;
+
+%Extreme azimuths
+f = p / (mp2-mr2);
+f = simplify(f,"Steps", steps);
+A = 0.5*atan(f)
+
+%Numerical computations
+un = 35.2644 * pi/180;
+vn = 0;
+Rn = 1;
+
+%Coordinates
+xn = double(subs(x,{u,v,R},{un,vn,Rn}));
+yn = double(subs(y,{u,v,R},{un,vn,Rn}));
+
+%Local linear scales
+mpn = sqrt(double(subs(mp2,{u,v,R},{un,vn,Rn})));
+mrn = sqrt(double(subs(mr2,{u,v,R},{un,vn,Rn})));
+pn = double(subs(p,{u,v,R},{un,vn,Rn}));
+
+%Angle between meridian and prarallel
+omegan = double(subs(omega,{u,v,R},{un,vn,Rn}))
+
+%Area scale
+Pn = double(subs(P,{u,v,R},{un,vn,Rn}))
+
+%Convergence
+convn = double(subs(conv,{u,v,R},{un,vn,Rn}))
+
+%Extreme azimuths
+A1 = 0;
+A2 = pi/2;
+
+%Maximum angular distortion
+mad = 2*asin(abs(mpn - mrn)/(mpn + mrn))
+
+
+
+
+
+

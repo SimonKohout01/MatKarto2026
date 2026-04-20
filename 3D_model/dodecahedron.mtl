@@ -1,0 +1,68 @@
+newmtl MatPatch_1
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_2
+Kd 1.000000 1.000000 1.000000
+newmtl MatPatch_3
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_4
+Kd 1.000000 1.000000 1.000000
+newmtl MatPatch_5
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_6
+Kd 1.000000 1.000000 1.000000
+newmtl MatPatch_7
+Kd 1.000000 1.000000 1.000000
+newmtl MatPatch_8
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_9
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_10
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_11
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_12
+Kd 1.000000 1.000000 1.000000
+newmtl MatPatch_13
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_14
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_15
+Kd 1.000000 1.000000 1.000000
+newmtl MatPatch_16
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_17
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_18
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_19
+Kd 1.000000 1.000000 1.000000
+newmtl MatPatch_20
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_21
+Kd 1.000000 1.000000 1.000000
+newmtl MatPatch_22
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_23
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_24
+Kd 1.000000 1.000000 1.000000
+newmtl MatPatch_25
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_26
+Kd 1.000000 1.000000 1.000000
+newmtl MatPatch_27
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_28
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_29
+Kd 1.000000 1.000000 1.000000
+newmtl MatPatch_30
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_31
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_32
+Kd 0.152941 0.364706 0.121569
+newmtl MatPatch_33
+Kd 1.000000 1.000000 1.000000
+newmtl MatLine_Black
+Kd 0.0 0.0 0.0
