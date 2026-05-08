@@ -50,7 +50,7 @@ ny1_chile = round(m1_chile -1,6)
 ny2_chile = round(m2_chile -1,6)
 ny0_chile = round(m0_chile -1,6)
 
-print("CHILE DISTORTION", ny1_chile, ny2_chile, ny0_chile)
+print("CHILE DISTORTION: Northern parallel =", ny1_chile,"Southern parallel =", ny2_chile,"Middle parallel =", ny0_chile)
 
 
 # SVYCARSKO
@@ -60,7 +60,7 @@ uk_svyc = 46.112849306762 * pi/180 # + here because it is NORTH
 vk_svyc = 8.448352102567 * pi/180 # + here because it is EAST
 
 # Northernmost point
-u1_svyc = 46162394752306 * pi/180
+u1_svyc = 46.162394752306 * pi/180
 v1_svyc = 8.578877501097 * pi/180
 
 # Southernmost point
@@ -99,4 +99,4 @@ ny1_svyc = round(m1_svyc - 1,6)
 ny2_svyc = round(m2_svyc - 1,6)
 ny0_svyc = round(m0_svyc - 1,6)
 
-print("SVYCARSKO DISTORTION", ny1_svyc, ny2_svyc, ny0_svyc)
+print("SWITZERLAND DISTORTION: Northern parallel =", ny1_svyc,"Southern parallel =", ny2_svyc,"Middle Parallel =", ny0_svyc)
