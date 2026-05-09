@@ -46,9 +46,15 @@ m1_chile = (c_chile * rho1_chile)/(R * cos(s1_chile))
 m2_chile = (c_chile * rho2_chile)/(R * cos(s2_chile))
 m0_chile = (c_chile * rho0_chile)/(R * cos(s0_chile))
 
-ny1_chile = round(m1_chile -1,6)
-ny2_chile = round(m2_chile -1,6)
-ny0_chile = round(m0_chile -1,6)
+# Distortion *1000 = distortion in m/km
+ny1_chile = (m1_chile - 1)*1000
+ny2_chile = (m2_chile - 1)*1000
+ny0_chile = (m0_chile - 1)*1000
+
+# Rounded to 6 decimals
+ny1_chile = round(ny1_chile,6)
+ny2_chile = round(ny2_chile,6)
+ny0_chile = round(ny0_chile,6)
 
 print("CHILE DISTORTION: Northern parallel =", ny1_chile,"Southern parallel =", ny2_chile,"Middle parallel =", ny0_chile)
 
@@ -95,8 +101,14 @@ m1_svyc = (c_svyc * rho1_svyc)/(R * cos(s1_svyc))
 m2_svyc = (c_svyc * rho2_svyc)/(R * cos(s2_svyc))
 m0_svyc = (c_svyc * rho0_svyc)/(R * cos(s0_svyc))
 
-ny1_svyc = round(m1_svyc - 1,6)
-ny2_svyc = round(m2_svyc - 1,6)
-ny0_svyc = round(m0_svyc - 1,6)
+# Distortion *1000 = distortion in m/km
+ny1_svyc = (m1_svyc - 1)*1000
+ny2_svyc = (m2_svyc - 1)*1000
+ny0_svyc = (m0_svyc - 1)*1000
+
+# Round to 6 decimals
+ny1_svyc = round(ny1_svyc,6)
+ny2_svyc = round(ny2_svyc,6)
+ny0_svyc = round(ny0_svyc,6)
 
 print("SWITZERLAND DISTORTION: Northern parallel =", ny1_svyc,"Southern parallel =", ny2_svyc,"Middle Parallel =", ny0_svyc)

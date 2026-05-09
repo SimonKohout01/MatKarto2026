@@ -33,10 +33,14 @@ psi0_chile = 2*acos(sqrt(mi_chile))
 m1_chile = ((cos(psi0_chile/2))**2)/((cos(psi_chile/2))**2)
 m0_chile = ((cos(psi0_chile/2))**2)/1       # denom = cos(0) = 1
 
+# Distortion *1000 = distortion in m/km
+ny1_chile = (m1_chile - 1)*1000
+ny0_chile = (m0_chile - 1)*1000
 
-# Distortions 
-ny1_chile = round(m1_chile-1,6)
-ny0_chile = round(m0_chile-1,6)
+# Rounded to 6 decimals
+ny1_chile = round(ny1_chile,6)
+ny0_chile = round(ny0_chile,6)
+
 print("CHILE DISTORTION: Distortion on the edge =", ny1_chile,"Distortion in the pole =", ny0_chile)
 
 
@@ -70,7 +74,11 @@ m1_svyc = ((cos(psi0_svyc/2))**2)/((cos(psi_svyc/2))**2)
 m0_svyc = ((cos(psi0_svyc/2))**2)/1
 
 
-# Distortions 
-ny1_svyc = round(m1_svyc-1,6)
-ny0_svyc = round(m0_svyc-1,6)
+# Distortion *1000 = distortion in m/km
+ny1_svyc = (m1_svyc - 1)*1000
+ny0_svyc = (m0_svyc - 1)*1000
+
+# Round to 6 decimals
+ny1_svyc = round(ny1_svyc,6)
+ny0_svyc = round(ny0_svyc,6)
 print("SWITZERLAND DISTORTION: Distortion on the edge =", ny1_svyc,"Distortion in the pole =", ny0_svyc)
